@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/cyd/my_muduo/build",
+  "command": "/usr/bin/g++ -Dmy_muduo_EXPORTS  {CMAKE_CXX_FLAGS} -g -std=c++11 -g -fPIC -o CMakeFiles/my_muduo.dir/Logger.cc.o -c /home/cyd/my_muduo/Logger.cc",
+  "file": "/home/cyd/my_muduo/Logger.cc",
+  "output": "CMakeFiles/my_muduo.dir/Logger.cc.o"
+},
+{
+  "directory": "/home/cyd/my_muduo/build",
+  "command": "/usr/bin/g++ -Dmy_muduo_EXPORTS  {CMAKE_CXX_FLAGS} -g -std=c++11 -g -fPIC -o CMakeFiles/my_muduo.dir/Timestamp.cc.o -c /home/cyd/my_muduo/Timestamp.cc",
+  "file": "/home/cyd/my_muduo/Timestamp.cc",
+  "output": "CMakeFiles/my_muduo.dir/Timestamp.cc.o"
+}
+]

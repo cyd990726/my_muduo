@@ -5,7 +5,7 @@
 class Timestamp{
 public:
     Timestamp();
-    //防止发生隐式转换
+    //防止发生隐式转换,对于单参数的构造函数要尤其注意这一点。
     explicit Timestamp(int64_t microSecondsSinceEpochArg);
     //获取现在的时间的Timestamp对象
     static Timestamp now();

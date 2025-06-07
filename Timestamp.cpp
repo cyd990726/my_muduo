@@ -1,4 +1,4 @@
-#include "Timestamp.h"
+#include "Timestamp.hpp"
 #include <time.h>
 
 Timestamp::Timestamp():secondsSinceEpoch_(0){}
@@ -21,12 +21,5 @@ std::string Timestamp::toString(){
         tp->tm_hour,
         tp->tm_min,
         tp->tm_sec);
-
     return buf;
 }
-
-// int main(){
-//     Timestamp time;
-//     std::cout << time.now().toString();
-//     return 0;
-// }

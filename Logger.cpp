@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Timestamp.h"
-#include "Logger.h"
+#include "Timestamp.hpp"
+#include "Logger.hpp"
 
 //获取唯一实例对象
 Logger& Logger::instance(){
@@ -8,7 +8,7 @@ Logger& Logger::instance(){
     return logger;
 }
 //设置日志级别
-void Logger::setLogLevel(int level){
+void Logger::setLogLevel(LogLevel level){
     this->logLevel_ = level;
 }
 //写日志

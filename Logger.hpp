@@ -1,6 +1,6 @@
 #pragma once
 
-#include "noncopyable.h"
+#include "noncopyable.hpp"
 #include <string>
 
 //方便用户使用，将器定义为宏函数。
@@ -59,15 +59,15 @@ enum LogLevel
 //定义日志类，注意是一个单例对象。
 class Logger : noncopyable{
 
-    public:
+public:
     //获取唯一实例对象
     static Logger& instance();
     //设置日志级别
-    void setLogLevel(int level);
+    void setLogLevel(LogLevel level);
     //写日志
     void log(std::string msg);
 
-    private:
+private:
     //日志级别
     int logLevel_;
     Logger(){}

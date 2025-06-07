@@ -1,1 +1,0 @@
-/usr/bin/aarch64-linux-gnu-g++ -fPIC  -g -std=c++11 -shared -Wl,-soname,libmy_muduo.so -o libmy_muduo.so CMakeFiles/my_muduo.dir/Logger.cc.o CMakeFiles/my_muduo.dir/Timestamp.cc.o 

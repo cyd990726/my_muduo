@@ -1,5 +1,6 @@
 #pragma once
 #include "Poller.hpp"
+#include <sys/epoll.h>
 /**
  * 主要对以下三个方法进行封装
  * epoll_create
@@ -30,7 +31,7 @@ private:
     //更新channel通道
     void update(int operation, Channel *channel);
 
-    //定义一个事件列表
+    //定义一个事件列表，用于epoll_wait接受发生的事件
     using EventList = std::vector<epoll_event>;
     EventList events_;
 

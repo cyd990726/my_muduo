@@ -33,7 +33,7 @@ void Channel::update(){
     this->loop_->updateChannel(this);
 }
 
-//在channel所属的EventLoop中，把当前的channel删除掉
+//在channel所属的EventLoop中，把当前的channel删除掉，最终是调用到Poller的removeChannel方法
 void Channel::remove(){
     this->loop_->removeChannel(this);
 }

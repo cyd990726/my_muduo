@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 
+// 定义时间戳对象
+
 class Timestamp{
 public:
     Timestamp();

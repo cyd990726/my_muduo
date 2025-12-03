@@ -15,6 +15,5 @@ protected:
     ////保证本类无法构造,但是不能影响派生类的构造
     noncopyable() = default;
     ~noncopyable() = default;
-
 };
 

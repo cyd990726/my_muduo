@@ -3,9 +3,9 @@
 #include <sys/epoll.h>
 /**
  * 主要对以下三个方法进行封装
- * epoll_create
- * epoll_ctl:add/mod/del
- * epoll_wait
+ * epoll_create：构造函数里封装
+ * epoll_ctl:add/mod/del：update/removeChannel方法里封装
+ * epoll_wait：poll方法里封装
  */
 
 
@@ -34,7 +34,5 @@ private:
     //定义一个事件列表，用于epoll_wait接受发生的事件
     using EventList = std::vector<epoll_event>;
     EventList events_;
-
-
 
 };

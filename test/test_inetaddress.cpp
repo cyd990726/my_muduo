@@ -3,7 +3,6 @@
 
 
 
-
 TEST(InetAddressTest, toIp){
     InetAddress addr(1999, "127.0.0.1");
     EXPECT_EQ(addr.toIp(), "127.0.0.1");

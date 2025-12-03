@@ -15,16 +15,16 @@ void Logger::setLogLevel(LogLevel level){
 void Logger::log(std::string msg){
     switch (this->logLevel_){
         case LogLevel::INFO:
-            std::cout<< "[INFO]";
+            std::cout<< "\033[32m[INFO]\033[0m\n";
             break;
         case LogLevel::ERROR:
-            std::cout<< "[ERROR]";
+            std::cout<< "\033[31m[ERROR]\033[0m\n";
             break;
         case LogLevel::DEBUG:
-            std::cout<< "[DEBUG]";
+            std::cout<< "\033[32m[DEBUG]\033[0m\n";
             break;
         case LogLevel::FATAL:
-            std::cout<< "[FATAL]";
+            std::cout<< "\033[31m[FATAL]\033[0m\n";
             break;
         default:
             break;

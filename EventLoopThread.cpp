@@ -35,7 +35,7 @@ EventLoop* EventLoopThread::startLoop(){
 
 // 线程中执行的函数
 void EventLoopThread::threadFunc(){
-    EventLoop loop; //创建一个独立的EventLoop
+    EventLoop loop; //创建一个独立的EventLoop对象，这是线程栈空间上的对象，不需要手动管理它的生命周期。
     if (this->callBack_)
     {
         //在新线程中运行回调函数

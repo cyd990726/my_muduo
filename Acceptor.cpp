@@ -27,12 +27,16 @@ Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reusepor
 
 }
 Acceptor::~Acceptor(){
-
+    acceptChannel_.disableAll();
+    acceptChannel_.remove();
 }
 
 
 void Acceptor::listen(){
-
+    //开启监听
+    acceptSocket_.listen();
+    acceptChannel_.enableReading();
+    listening_ = true;
 }
    
 //listenfd有新连接到来时的回调函数
